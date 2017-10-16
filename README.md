@@ -5,6 +5,8 @@ It has it's own tiny FPS like user interface, and it was built using Juce and se
 
 ![screenshot](https://raw.githubusercontent.com/Bk8/Auris/master/Resources/doxyicon.png)
 
+![screenshot](https://raw.githubusercontent.com/Bk8/Auris/master/ScreenShot.png)
+
 # Compilation
 First get Juce and Projucer from this link:
 
