@@ -1,0 +1,73 @@
+\hypertarget{class_f_p_s_camera}{}\section{F\+P\+S\+Camera Class Reference}
+\label{class_f_p_s_camera}\index{F\+P\+S\+Camera@{F\+P\+S\+Camera}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a3559b2ac359911c6e5dd9449fda72082}\label{class_f_p_s_camera_a3559b2ac359911c6e5dd9449fda72082}} 
+\hyperlink{struct_vec3f}{Vec3f} {\bfseries get\+Position} ()
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a8e0c8ebfc81b01e542e9b2972c8562c1}\label{class_f_p_s_camera_a8e0c8ebfc81b01e542e9b2972c8562c1}} 
+\hyperlink{struct_vec3f}{Vec3f} {\bfseries get\+View} ()
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a05857c6e4262f11e83d2cf824b161b0e}\label{class_f_p_s_camera_a05857c6e4262f11e83d2cf824b161b0e}} 
+\hyperlink{struct_vec3f}{Vec3f} {\bfseries get\+Up\+Vector} ()
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a131adcf4cdb53546900583556dae0071}\label{class_f_p_s_camera_a131adcf4cdb53546900583556dae0071}} 
+\hyperlink{struct_vec3f}{Vec3f} {\bfseries get\+Strafe} ()
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a96fdf7fc079dea4aa9c360e195ec9bc9}\label{class_f_p_s_camera_a96fdf7fc079dea4aa9c360e195ec9bc9}} 
+\hyperlink{class_sphere}{Sphere} {\bfseries get\+Collison\+Sphere} ()
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a00fbb3eac9d77b41ccc71a67df9a6716}\label{class_f_p_s_camera_a00fbb3eac9d77b41ccc71a67df9a6716}} 
+float {\bfseries get\+Xrotation} ()
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_ab2fb3b866d0e0c545f6366769e8530fc}\label{class_f_p_s_camera_ab2fb3b866d0e0c545f6366769e8530fc}} 
+float {\bfseries get\+Yrotation} ()
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a3c6d11e5ad8c8417c5ad9be0d97cf4d6}\label{class_f_p_s_camera_a3c6d11e5ad8c8417c5ad9be0d97cf4d6}} 
+void {\bfseries set\+Position} (float positionX, float positionY, float positionZ, float viewX, float viewY, float viewZ, float up\+VectorX, float up\+VectorY, float up\+VectorZ)
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a7a4ade212677a3f6da321f1dea7ab572}\label{class_f_p_s_camera_a7a4ade212677a3f6da321f1dea7ab572}} 
+void {\bfseries rotate\+View} (float angle, float X, float Y, float Z)
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_ae596d38d60db97bdf617d5f2cfade10b}\label{class_f_p_s_camera_ae596d38d60db97bdf617d5f2cfade10b}} 
+void {\bfseries set\+View\+By\+Mouse} (float mouseX, float mouseY, int width, int height)
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_aeddf4e5206e4c2f4ef44bc7cbcb68776}\label{class_f_p_s_camera_aeddf4e5206e4c2f4ef44bc7cbcb68776}} 
+void {\bfseries rotate\+Around\+Point} (\hyperlink{struct_vec3f}{Vec3f} v\+Center, float X, float Y, float Z)
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a5dfb63b3f68c9682444011b60c1c998c}\label{class_f_p_s_camera_a5dfb63b3f68c9682444011b60c1c998c}} 
+void {\bfseries set\+Xrotation} (float rotation)
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a6298cea0150128aab9b71db46b33c7b6}\label{class_f_p_s_camera_a6298cea0150128aab9b71db46b33c7b6}} 
+void {\bfseries strafe} (float speed)
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a6a0cac90ac9fcfaef12fe16bad8ed24d}\label{class_f_p_s_camera_a6a0cac90ac9fcfaef12fe16bad8ed24d}} 
+void {\bfseries move} (float speed)
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a1792fa28fa33dd6efda48f13b7b610dd}\label{class_f_p_s_camera_a1792fa28fa33dd6efda48f13b7b610dd}} 
+void {\bfseries check\+For\+Movement} ()
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a738560c0c908cf654776cbad1264e493}\label{class_f_p_s_camera_a738560c0c908cf654776cbad1264e493}} 
+void {\bfseries update} (float mouseX, float mouseY, int width, int height)
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a2ccca2c82f14e38b4fd32875a7e9da25}\label{class_f_p_s_camera_a2ccca2c82f14e38b4fd32875a7e9da25}} 
+void {\bfseries look} ()
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a503e4704b8858062f10e7aedd091d3c9}\label{class_f_p_s_camera_a503e4704b8858062f10e7aedd091d3c9}} 
+void {\bfseries check\+Camera\+Collision} (\hyperlink{class_triangle}{Triangle} $\ast$room\+Triangles, int num\+Triangles)
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_a32904ec6c5592810188db68cd9c13a52}\label{class_f_p_s_camera_a32904ec6c5592810188db68cd9c13a52}} 
+\hyperlink{struct_vec3f}{Vec3f} {\bfseries get\+Collision\+Offset} (\hyperlink{struct_vec3f}{Vec3f} \&v\+Normal, float radius, float distance)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_f_p_s_camera_ae33a5225fc7cab505ba74bb4d0df4b99}\label{class_f_p_s_camera_ae33a5225fc7cab505ba74bb4d0df4b99}} 
+\hyperlink{class_sphere}{Sphere} {\bfseries sphere}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Camera/Camera.\+h\end{DoxyCompactItemize}

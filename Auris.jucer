@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="cAIPCb" name="Auris" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.Auris" includeBinaryInAppConfig="1"
+              jucerVersion="4.2.3">
+  <MAINGROUP id="jsEvHs" name="Auris">
+    <GROUP id="{2BE068EC-5E80-2376-4F8B-1A70C54AD576}" name="Source">
+      <GROUP id="{BBEBB463-0D43-A687-F89A-1A2743F0EA4E}" name="Audio">
+        <GROUP id="{125742FD-EF40-145E-E971-98B98FC4F555}" name="FFTConvolver">
+          <FILE id="eYa9K0" name="AudioFFT.cpp" compile="1" resource="0" file="Source/Audio/FFTConvolver/AudioFFT.cpp"/>
+          <FILE id="vbEkOY" name="AudioFFT.h" compile="0" resource="0" file="Source/Audio/FFTConvolver/AudioFFT.h"/>
+          <FILE id="l2o9y6" name="FFTConvolver.cpp" compile="1" resource="0"
+                file="Source/Audio/FFTConvolver/FFTConvolver.cpp"/>
+          <FILE id="muoy6H" name="FFTConvolver.h" compile="0" resource="0" file="Source/Audio/FFTConvolver/FFTConvolver.h"/>
+          <FILE id="JkQM3j" name="Utilities.cpp" compile="1" resource="0" file="Source/Audio/FFTConvolver/Utilities.cpp"/>
+          <FILE id="FmYIQ1" name="Utilities.h" compile="0" resource="0" file="Source/Audio/FFTConvolver/Utilities.h"/>
+        </GROUP>
+        <GROUP id="{B443227E-9CBD-97BD-E82E-3B8809BB4E7B}" name="mit-hrtf-lib">
+          <GROUP id="{DAA782C5-79CB-D8E4-2ECD-DE8618CED7AE}" name="source">
+            <GROUP id="{B02B89C5-0087-32F1-4F39-998721DF7D87}" name="diffuse">
+              <FILE id="VZ2n2a" name="mit_hrtf_diffuse_44100.h" compile="0" resource="0"
+                    file="Source/Audio/mit-hrtf-lib/source/diffuse/mit_hrtf_diffuse_44100.h"/>
+              <FILE id="Dm93Wf" name="mit_hrtf_diffuse_48000.h" compile="0" resource="0"
+                    file="Source/Audio/mit-hrtf-lib/source/diffuse/mit_hrtf_diffuse_48000.h"/>
+              <FILE id="hjcIPK" name="mit_hrtf_diffuse_88200.h" compile="0" resource="0"
+                    file="Source/Audio/mit-hrtf-lib/source/diffuse/mit_hrtf_diffuse_88200.h"/>
+              <FILE id="xWqTMg" name="mit_hrtf_diffuse_96000.h" compile="0" resource="0"
+                    file="Source/Audio/mit-hrtf-lib/source/diffuse/mit_hrtf_diffuse_96000.h"/>
+            </GROUP>
+            <GROUP id="{BBDE07E7-F4EB-44CC-C657-54CF91588B87}" name="normal">
+              <FILE id="vvppEV" name="mit_hrtf_normal_44100.h" compile="0" resource="0"
+                    file="Source/Audio/mit-hrtf-lib/source/normal/mit_hrtf_normal_44100.h"/>
+              <FILE id="X2SL4d" name="mit_hrtf_normal_48000.h" compile="0" resource="0"
+                    file="Source/Audio/mit-hrtf-lib/source/normal/mit_hrtf_normal_48000.h"/>
+              <FILE id="nsZg4Q" name="mit_hrtf_normal_88200.h" compile="0" resource="0"
+                    file="Source/Audio/mit-hrtf-lib/source/normal/mit_hrtf_normal_88200.h"/>
+              <FILE id="AXTCou" name="mit_hrtf_normal_96000.h" compile="0" resource="0"
+                    file="Source/Audio/mit-hrtf-lib/source/normal/mit_hrtf_normal_96000.h"/>
+            </GROUP>
+            <FILE id="DY7kcG" name="mit_hrtf_filter.h" compile="0" resource="0"
+                  file="Source/Audio/mit-hrtf-lib/source/mit_hrtf_filter.h"/>
+            <FILE id="aymjtG" name="mit_hrtf_lib.c" compile="1" resource="0" file="Source/Audio/mit-hrtf-lib/source/mit_hrtf_lib.c"/>
+          </GROUP>
+          <FILE id="AAkQUj" name="mit_hrtf_lib.h" compile="0" resource="0" file="Source/Audio/mit-hrtf-lib/mit_hrtf_lib.h"/>
+        </GROUP>
+        <FILE id="LGFifn" name="BinauralAudioSource.cpp" compile="1" resource="0"
+              file="Source/Audio/BinauralAudioSource.cpp"/>
+        <FILE id="r7vWd5" name="BinauralAudioSource.h" compile="0" resource="0"
+              file="Source/Audio/BinauralAudioSource.h"/>
+        <FILE id="r3O5dq" name="HRTFContainer.cpp" compile="1" resource="0"
+              file="Source/Audio/HRTFContainer.cpp"/>
+        <FILE id="FOeuva" name="HRTFContainer.h" compile="0" resource="0" file="Source/Audio/HRTFContainer.h"/>
+        <FILE id="Ds4JbT" name="Util.h" compile="0" resource="0" file="Source/Audio/Util.h"/>
+      </GROUP>
+      <GROUP id="{15D76FA1-8F69-B492-4D9E-B71058CABDB1}" name="Camera">
+        <FILE id="WJDnCo" name="Camera.cpp" compile="1" resource="0" file="Source/Camera/Camera.cpp"/>
+        <FILE id="ySmM31" name="Camera.h" compile="0" resource="0" file="Source/Camera/Camera.h"/>
+      </GROUP>
+      <GROUP id="{A2A63772-07DB-E177-5B51-D6CA6527A625}" name="Component">
+        <GROUP id="{916B48BC-C969-27DD-FF91-5A80AC6682F8}" name="images">
+          <FILE id="P6nArP" name="head_side.h" compile="0" resource="0" file="Source/Component/images/head_side.h"/>
+          <FILE id="j4ZXDC" name="head_top.h" compile="0" resource="0" file="Source/Component/images/head_top.h"/>
+          <FILE id="jWBNVi" name="source_icon.h" compile="0" resource="0" file="Source/Component/images/source_icon.h"/>
+        </GROUP>
+        <FILE id="UCJAXf" name="MainDisplay.cpp" compile="1" resource="0" file="Source/Component/MainDisplay.cpp"/>
+        <FILE id="PXUHPK" name="MainDisplay.h" compile="0" resource="0" file="Source/Component/MainDisplay.h"/>
+        <FILE id="RBMGHk" name="Util.h" compile="0" resource="0" file="Source/Component/Util.h"/>
+      </GROUP>
+      <GROUP id="{4C4C27AB-F950-C8D9-E334-9138888AE393}" name="Math">
+        <FILE id="OEwCLX" name="Matrices.cpp" compile="1" resource="0" file="Source/Math/Matrices.cpp"/>
+        <FILE id="gmKT4V" name="Matrices.h" compile="0" resource="0" file="Source/Math/Matrices.h"/>
+        <FILE id="XLEpHu" name="Vectors.h" compile="0" resource="0" file="Source/Math/Vectors.h"/>
+      </GROUP>
+      <GROUP id="{508E2953-BA03-EF98-1092-60C3944B52A2}" name="ObjLoader">
+        <FILE id="PoJVdb" name="tiny_obj_loader.cc" compile="1" resource="0"
+              file="Source/ObjLoader/tiny_obj_loader.cc"/>
+        <FILE id="BtcUB6" name="tiny_obj_loader.h" compile="0" resource="0"
+              file="Source/ObjLoader/tiny_obj_loader.h"/>
+      </GROUP>
+      <GROUP id="{7294D226-DCB5-9D61-C2D5-7942EDA69145}" name="Primitives">
+        <FILE id="msMq9E" name="IntersectionInfo.h" compile="0" resource="0"
+              file="Source/Primitives/IntersectionInfo.h"/>
+        <FILE id="Qp3j1K" name="Ray.cpp" compile="1" resource="0" file="Source/Primitives/Ray.cpp"/>
+        <FILE id="MbHlTx" name="Ray.h" compile="0" resource="0" file="Source/Primitives/Ray.h"/>
+        <FILE id="Oci430" name="Sphere.cpp" compile="1" resource="0" file="Source/Primitives/Sphere.cpp"/>
+        <FILE id="ITuNz6" name="Sphere.h" compile="0" resource="0" file="Source/Primitives/Sphere.h"/>
+        <FILE id="gmeseQ" name="Triangle.cpp" compile="1" resource="0" file="Source/Primitives/Triangle.cpp"/>
+        <FILE id="ASb2Qo" name="Triangle.h" compile="0" resource="0" file="Source/Primitives/Triangle.h"/>
+      </GROUP>
+      <GROUP id="{317CFDE0-9ED6-A51A-8954-7C91B18D9917}" name="Simulation">
+        <FILE id="XdJxwf" name="Room.cpp" compile="1" resource="0" file="Source/Simulation/Room.cpp"/>
+        <FILE id="EABZOQ" name="Room.h" compile="0" resource="0" file="Source/Simulation/Room.h"/>
+        <FILE id="QjjnGc" name="SoundSource.cpp" compile="1" resource="0" file="Source/Simulation/SoundSource.cpp"/>
+        <FILE id="FGemzS" name="SoundSource.h" compile="0" resource="0" file="Source/Simulation/SoundSource.h"/>
+      </GROUP>
+      <FILE id="Ls6nkk" name="Definitions.h" compile="0" resource="0" file="Source/Definitions.h"/>
+      <FILE id="sebdHS" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="W3tMsm" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+    <GROUP id="{73A70703-8A9D-4DF6-6397-FE129925B1B6}" name="Resources">
+      <FILE id="SwNUVO" name="icon.png" compile="0" resource="1" file="Resources/icon.png"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" bigIcon="ughtgH" smallIcon="SwNUVO">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Auris"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="Auris"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../modules"/>
+        <MODULEPATH id="juce_video" path="../../modules"/>
+        <MODULEPATH id="juce_opengl" path="../../modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

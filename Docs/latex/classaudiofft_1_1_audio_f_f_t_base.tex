@@ -1,0 +1,131 @@
+\hypertarget{classaudiofft_1_1_audio_f_f_t_base}{}\section{audiofft\+:\+:Audio\+F\+F\+T\+Base Class Reference}
+\label{classaudiofft_1_1_audio_f_f_t_base}\index{audiofft\+::\+Audio\+F\+F\+T\+Base@{audiofft\+::\+Audio\+F\+F\+T\+Base}}
+
+
+Interface class for F\+FT implementations.  
+
+
+
+
+{\ttfamily \#include $<$Audio\+F\+F\+T.\+h$>$}
+
+Inheritance diagram for audiofft\+:\+:Audio\+F\+F\+T\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classaudiofft_1_1_audio_f_f_t_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaudiofft_1_1_audio_f_f_t_base_a19636644ba4d4d68e8cfb0f322c84529}\label{classaudiofft_1_1_audio_f_f_t_base_a19636644ba4d4d68e8cfb0f322c84529}} 
+\hyperlink{classaudiofft_1_1_audio_f_f_t_base_a19636644ba4d4d68e8cfb0f322c84529}{Audio\+F\+F\+T\+Base} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classaudiofft_1_1_audio_f_f_t_base_a0706bdad2a32581b9e8ad3d9634e59f8}\label{classaudiofft_1_1_audio_f_f_t_base_a0706bdad2a32581b9e8ad3d9634e59f8}} 
+virtual \hyperlink{classaudiofft_1_1_audio_f_f_t_base_a0706bdad2a32581b9e8ad3d9634e59f8}{$\sim$\+Audio\+F\+F\+T\+Base} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classaudiofft_1_1_audio_f_f_t_base_a32447c362c9c78c570c5117762b190d4}{init} (size\+\_\+t size)=0
+\begin{DoxyCompactList}\small\item\em Initializes the F\+FT object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classaudiofft_1_1_audio_f_f_t_base_a6bc26fdcecf8fc098b56bdf6d0701ac5}{fft} (const float $\ast$data, float $\ast$re, float $\ast$im)=0
+\begin{DoxyCompactList}\small\item\em Performs the forward F\+FT. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classaudiofft_1_1_audio_f_f_t_base_af633d8de53a76111f04de997e54d8f9f}{ifft} (float $\ast$data, const float $\ast$re, const float $\ast$im)=0
+\begin{DoxyCompactList}\small\item\em Performs the inverse F\+FT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t \hyperlink{classaudiofft_1_1_audio_f_f_t_base_af0919d60c2bd7a05127625bfcc5c6a08}{Complex\+Size} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Calculates the necessary size of the real/imaginary complex arrays. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface class for F\+FT implementations. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaudiofft_1_1_audio_f_f_t_base_af0919d60c2bd7a05127625bfcc5c6a08}\label{classaudiofft_1_1_audio_f_f_t_base_af0919d60c2bd7a05127625bfcc5c6a08}} 
+\index{audiofft\+::\+Audio\+F\+F\+T\+Base@{audiofft\+::\+Audio\+F\+F\+T\+Base}!Complex\+Size@{Complex\+Size}}
+\index{Complex\+Size@{Complex\+Size}!audiofft\+::\+Audio\+F\+F\+T\+Base@{audiofft\+::\+Audio\+F\+F\+T\+Base}}
+\subsubsection{\texorpdfstring{Complex\+Size()}{ComplexSize()}}
+{\footnotesize\ttfamily static size\+\_\+t audiofft\+::\+Audio\+F\+F\+T\+Base\+::\+Complex\+Size (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Calculates the necessary size of the real/imaginary complex arrays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the real data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of the real/imaginary complex arrays 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classaudiofft_1_1_audio_f_f_t_base_a6bc26fdcecf8fc098b56bdf6d0701ac5}\label{classaudiofft_1_1_audio_f_f_t_base_a6bc26fdcecf8fc098b56bdf6d0701ac5}} 
+\index{audiofft\+::\+Audio\+F\+F\+T\+Base@{audiofft\+::\+Audio\+F\+F\+T\+Base}!fft@{fft}}
+\index{fft@{fft}!audiofft\+::\+Audio\+F\+F\+T\+Base@{audiofft\+::\+Audio\+F\+F\+T\+Base}}
+\subsubsection{\texorpdfstring{fft()}{fft()}}
+{\footnotesize\ttfamily virtual void audiofft\+::\+Audio\+F\+F\+T\+Base\+::fft (\begin{DoxyParamCaption}\item[{const float $\ast$}]{data,  }\item[{float $\ast$}]{re,  }\item[{float $\ast$}]{im }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Performs the forward F\+FT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The real input data (has to be of the length as specified in \hyperlink{classaudiofft_1_1_audio_f_f_t_base_a32447c362c9c78c570c5117762b190d4}{init()}) \\
+\hline
+{\em re} & The real part of the complex output (has to be of length as returned by \hyperlink{classaudiofft_1_1_audio_f_f_t_base_af0919d60c2bd7a05127625bfcc5c6a08}{Complex\+Size()}) \\
+\hline
+{\em im} & The imaginary part of the complex output (has to be of length as returned by \hyperlink{classaudiofft_1_1_audio_f_f_t_base_af0919d60c2bd7a05127625bfcc5c6a08}{Complex\+Size()}) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classaudiofft_1_1_ooura_f_f_t_ad3eb09412d2ee5596e65b409915bc32a}{audiofft\+::\+Ooura\+F\+FT}.
+
+\mbox{\Hypertarget{classaudiofft_1_1_audio_f_f_t_base_af633d8de53a76111f04de997e54d8f9f}\label{classaudiofft_1_1_audio_f_f_t_base_af633d8de53a76111f04de997e54d8f9f}} 
+\index{audiofft\+::\+Audio\+F\+F\+T\+Base@{audiofft\+::\+Audio\+F\+F\+T\+Base}!ifft@{ifft}}
+\index{ifft@{ifft}!audiofft\+::\+Audio\+F\+F\+T\+Base@{audiofft\+::\+Audio\+F\+F\+T\+Base}}
+\subsubsection{\texorpdfstring{ifft()}{ifft()}}
+{\footnotesize\ttfamily virtual void audiofft\+::\+Audio\+F\+F\+T\+Base\+::ifft (\begin{DoxyParamCaption}\item[{float $\ast$}]{data,  }\item[{const float $\ast$}]{re,  }\item[{const float $\ast$}]{im }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Performs the inverse F\+FT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The real output data (has to be of the length as specified in \hyperlink{classaudiofft_1_1_audio_f_f_t_base_a32447c362c9c78c570c5117762b190d4}{init()}) \\
+\hline
+{\em re} & The real part of the complex input (has to be of length as returned by \hyperlink{classaudiofft_1_1_audio_f_f_t_base_af0919d60c2bd7a05127625bfcc5c6a08}{Complex\+Size()}) \\
+\hline
+{\em im} & The imaginary part of the complex input (has to be of length as returned by \hyperlink{classaudiofft_1_1_audio_f_f_t_base_af0919d60c2bd7a05127625bfcc5c6a08}{Complex\+Size()}) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classaudiofft_1_1_ooura_f_f_t_a751001432c5a03a99ae9684c71864d56}{audiofft\+::\+Ooura\+F\+FT}.
+
+\mbox{\Hypertarget{classaudiofft_1_1_audio_f_f_t_base_a32447c362c9c78c570c5117762b190d4}\label{classaudiofft_1_1_audio_f_f_t_base_a32447c362c9c78c570c5117762b190d4}} 
+\index{audiofft\+::\+Audio\+F\+F\+T\+Base@{audiofft\+::\+Audio\+F\+F\+T\+Base}!init@{init}}
+\index{init@{init}!audiofft\+::\+Audio\+F\+F\+T\+Base@{audiofft\+::\+Audio\+F\+F\+T\+Base}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void audiofft\+::\+Audio\+F\+F\+T\+Base\+::init (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initializes the F\+FT object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Size of the real input (must be power 2) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classaudiofft_1_1_ooura_f_f_t_ad5e0f74be03f4b76f134a7fcfe4718d9}{audiofft\+::\+Ooura\+F\+FT}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Audio/\+F\+F\+T\+Convolver/Audio\+F\+F\+T.\+h\end{DoxyCompactItemize}

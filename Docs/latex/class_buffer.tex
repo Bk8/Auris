@@ -1,0 +1,64 @@
+\hypertarget{class_buffer}{}\section{Buffer$<$ T $>$ Class Template Reference}
+\label{class_buffer}\index{Buffer$<$ T $>$@{Buffer$<$ T $>$}}
+
+
+Simple buffer implementation (uses 16-\/byte alignment if S\+SE optimization is enabled)  
+
+
+
+
+{\ttfamily \#include $<$Utilities.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_buffer_a54c824a6384e72ae87e3bd44aa124f24}\label{class_buffer_a54c824a6384e72ae87e3bd44aa124f24}} 
+{\bfseries Buffer} (size\+\_\+t initial\+Size=0)
+\item 
+\mbox{\Hypertarget{class_buffer_a366dcbac3789eb97c2cd775a449725e2}\label{class_buffer_a366dcbac3789eb97c2cd775a449725e2}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{class_buffer_a664d17647b99c84e2785a8f4c7329b53}\label{class_buffer_a664d17647b99c84e2785a8f4c7329b53}} 
+void {\bfseries resize} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{class_buffer_ad9f7fda0042390e831d3de7f925b9c64}\label{class_buffer_ad9f7fda0042390e831d3de7f925b9c64}} 
+size\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_buffer_a98b1293e9be59400d8ec2d46e97478df}\label{class_buffer_a98b1293e9be59400d8ec2d46e97478df}} 
+void {\bfseries set\+Zero} ()
+\item 
+\mbox{\Hypertarget{class_buffer_aa2085bbfead2a9edfbedf967961866c8}\label{class_buffer_aa2085bbfead2a9edfbedf967961866c8}} 
+void {\bfseries copy\+From} (const \hyperlink{class_buffer}{Buffer}$<$ T $>$ \&other)
+\item 
+\mbox{\Hypertarget{class_buffer_a68996979745c187cb5af2286e9b34baa}\label{class_buffer_a68996979745c187cb5af2286e9b34baa}} 
+T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index)
+\item 
+\mbox{\Hypertarget{class_buffer_a843bcd9407ee341049273efe301b1b9e}\label{class_buffer_a843bcd9407ee341049273efe301b1b9e}} 
+const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index) const
+\item 
+\mbox{\Hypertarget{class_buffer_a1198f8054cfec87dee44b7933af40d8e}\label{class_buffer_a1198f8054cfec87dee44b7933af40d8e}} 
+{\bfseries operator bool} () const
+\item 
+\mbox{\Hypertarget{class_buffer_aefcf31e86d928d0229fe4f73f9d347b5}\label{class_buffer_aefcf31e86d928d0229fe4f73f9d347b5}} 
+T $\ast$ {\bfseries data} ()
+\item 
+\mbox{\Hypertarget{class_buffer_a86995457bb362b60541f26e0bf9910ff}\label{class_buffer_a86995457bb362b60541f26e0bf9910ff}} 
+const T $\ast$ {\bfseries data} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_buffer_ae7b6b5c53d769b224d5c422b6a5c7c5c}\label{class_buffer_ae7b6b5c53d769b224d5c422b6a5c7c5c}} 
+static void {\bfseries Swap} (\hyperlink{class_buffer}{Buffer}$<$ T $>$ \&a, \hyperlink{class_buffer}{Buffer}$<$ T $>$ \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Buffer$<$ T $>$}
+
+Simple buffer implementation (uses 16-\/byte alignment if S\+SE optimization is enabled) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Audio/\+F\+F\+T\+Convolver/Utilities.\+h\end{DoxyCompactItemize}

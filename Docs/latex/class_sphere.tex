@@ -1,0 +1,34 @@
+\hypertarget{class_sphere}{}\section{Sphere Class Reference}
+\label{class_sphere}\index{Sphere@{Sphere}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sphere_a0120b87971ff07648422716b065ed411}\label{class_sphere_a0120b87971ff07648422716b065ed411}} 
+{\bfseries Sphere} (const \hyperlink{struct_vec3f}{Vec3f} \&center, float radius)
+\item 
+\mbox{\Hypertarget{class_sphere_a8d8da0e897f2bf41e3daea6ee89fe926}\label{class_sphere_a8d8da0e897f2bf41e3daea6ee89fe926}} 
+bool {\bfseries get\+Intersection} (\hyperlink{class_ray}{Ray} $\ast$ray, \hyperlink{struct_intersection_info}{Intersection\+Info} \&info)
+\item 
+\mbox{\Hypertarget{class_sphere_ac70b4e4699732c683074dd30de34257c}\label{class_sphere_ac70b4e4699732c683074dd30de34257c}} 
+int {\bfseries classify\+Sphere} (\hyperlink{struct_vec3f}{Vec3f} \&normal, \hyperlink{struct_vec3f}{Vec3f} \&point, float \&distance)
+\item 
+\mbox{\Hypertarget{class_sphere_ab5c6bec837adca54bcc965c8d8f01442}\label{class_sphere_ab5c6bec837adca54bcc965c8d8f01442}} 
+bool {\bfseries get\+Edge\+Sphere\+Collision} (\hyperlink{class_triangle}{Triangle} triangle, bool use\+Half\+Radius)
+\item 
+\mbox{\Hypertarget{class_sphere_a621eff133463d069422a025fdcc9e352}\label{class_sphere_a621eff133463d069422a025fdcc9e352}} 
+bool {\bfseries get\+Sphere\+Polygon\+Collision} (\hyperlink{class_triangle}{Triangle} triangle)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sphere_ae6f42f0da6679a2f0b4a22681ccccf38}\label{class_sphere_ae6f42f0da6679a2f0b4a22681ccccf38}} 
+float {\bfseries radius}
+\item 
+\mbox{\Hypertarget{class_sphere_a187d976cfed9dd03eb9528420c32e42e}\label{class_sphere_a187d976cfed9dd03eb9528420c32e42e}} 
+\hyperlink{struct_vec3f}{Vec3f} {\bfseries center}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Primitives/Sphere.\+h\end{DoxyCompactItemize}
